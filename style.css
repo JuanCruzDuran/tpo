@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "top";
+    src: url(fonts/inlanders/Inlanders\ Demo.otf);
+}
+@font-face {
+    font-family: "games";
+    src: url(fonts/llpixel/LLPIXEL3.ttf);
+}
+@font-face {
+    font-family: "titulos";
+    src: url(fonts/skygraze/Skygraze.otf);
+}
+
+html{
+    font-size: 62.5%;
+    background-image: url("imagenes para tpo/fondomain.jpg");
+}
+main{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-image: url("imagenes para tpo");
+}
+header{
+    margin: 0px;
+}
+
+i{
+    font-size: 40px;
+}
+a{
+    font-family: "top" ;
+    font-size: 4rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+a:hover {color: red;}
+p{
+    font-size: 2rem;
+    margin-left: 8px;
+}
+
+h1{
+    font-family: "games";
+    font-size: 4rem;
+    color: red;
+}
+h2{
+    font-family: "titulos";
+    font-size: 2rem;
+    color: rgb(153, 124, 124);
+}
+
+.grid-container-top{
+    display: grid;
+    background-color: black;
+    border: 2px solid red;
+    grid-template-columns: 0.3fr 0.3fr 0.4fr 0.5fr 0.1fr 2fr;
+}
+
+
+.grid-container{
+    display: grid;
+    text-align: center;
+    background-color: green;
+    grid-template-columns: 20rem 40rem;
+    border: 5px;
+    border-style: solid blue;
+}
+
+.flex-container-noticias{
+    display:flex;
+    justify-content:space-between;
+    font-size: 2rem;
+
+}
+
+.flex-container-main-populares{
+    display: flex;
+}
+
+.grid-item{
+    margin-top: 30px;
+
+}
+.flex-item{
+    display: flex;
+     border-style: outset;
+     background-color: rgb(230, 81, 23);
+    
+}
+.flex-item2{
+    display: flex;
+    background-color: transparent;
+}
+#item1{
+    font-size: 2rem;
+}
+#logo{
+    margin: 10px 10px;
+}
+
+
+
