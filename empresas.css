@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    min-height: 100%;
+    background-color: darksalmon;
+}
+
+h1{
+    color:white;
+    text-decoration:underline;
+}
+
+h5{
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px black;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-image: url('img/proba.jpg');
+    
+}
+
+.nav{
+    grid-area: nav;
+    
+}
+
+.main{
+    grid-area: main;
+    
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.p{
+    text-align: center;
+    text-decoration: underline;
+    color:darkmagenta;
+}
+a{
+    color: blue;
+}
+
+.imag_1{
+    width: 400px;
+    height: 300px;
+}
+.mapa{
+    width: 350px;
+    height: 350px;
+}
+
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed; 
+    bottom: 0%;
+    margin-top: 0%;
+}
+#dere{
+    color: red;
+    font-size: larger;
+
+}
+#redso{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+} */
+#redso a{
+    color: red;
+    margin: 0px 6px;
+    font-size: 2vw;
+}  
+
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template: 
+     "header" 100px
+     "nav" 90px
+     "main" auto
+     "footer" 100px;
+}
+
+@media (min-width: 600px) {
+    .grid-container{
+        grid-template: 
+         "header header" 100px
+         "nav nav" 80px
+         "main main" auto
+         "footer footer" 100px /
+        200px  auto ;
+    }
+}
+@media (min-width: 900px) {
+    .grid-container{
+        grid-template: 
+        "header header header" 100px
+        "nav" auto
+        "main main main" auto    
+        "footer footer footer" 100px /
+        200px auto 200px;
+    }
+}
+#rrrr{
+    color: red;
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+background-image: url('img/fondo.webp');
+
+}
+.titu{
+    font-family: 'Fasthand', cursive;
+    color: orange;
+    text-decoration: underline white;
+}
+
+
+
+
+.registro{
+    width: 90%;
+    max-width: 400px;
+    background: rgb(1, 25, 70);
+    padding: 4.5em 3em;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    box-shadow: 0px 5px 10px --5px #000;
+    text-align: center;
+}
+.registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    }
+#input{
+    width: 100%;
+    background: rgb(16, 235, 235);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    
+
+}
+
+
+ #sub{
+    background-color: red;
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 1em 4em ;
+    border: none;
+    border-radius: 2em;
+} 
+
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed; 
+    bottom: 0%;
+    margin-top: 0%;
+}
+#dere{
+    color: red;
+    font-size: larger;
+
+}
+.redso{
+    color: white;
+    font-size: 1.5vw;
+    text-align: center;
+} */
+.redso a{
+    color: red;
+    margin: 0px 6px;
+    font-size: 2vw;
+}  
+
+@media (max-width:425px) {
+    .titu{
+        font-size: 1.8rem;
+        
+    }
+
+}
