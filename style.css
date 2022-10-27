@@ -64,7 +64,7 @@ h1{
 }
 h2{
     font-family: "titulos";
-    font-size: 2rem;
+    font-size: 3rem;
     color: rgb(153, 124, 124);
 }
 
@@ -113,18 +113,26 @@ h2{
     margin-top: 10px;
     width: 1fr;
     margin-left: 280px;
+    margin-bottom: 100px;
 }
+.flex-item3{
+    flex-direction: row;
+    justify-content: center;
+}
+
 #item1{
     font-size: 2rem;
 }
 #logo{
     margin: 10px 10px;
 }
-
+.empresas{
+    margin-top: 40%;
+}
 .boton{
     display: flex;
     border-style: solid red;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -133,9 +141,64 @@ h2{
     margin: 0 2px;
 }
 
+#imagen-index{
+    width: 1207px;
+}
 
 
-@media screen and (max-width:375px)
+
+#animacion{
+    background-color: rgb(182, 23, 23);
+    height: 18vh;
+
+    animation-name: cambiaColor;
+    animation-duration: 10s;
+    animation-delay: 3s;    
+}
+
+@keyframes cambiaColor{
+    from{background-color:rgb(87, 78, 78);}
+    to{background-color: rgba(151, 16, 16, 0.753);}
+}
+
+#animacion > h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 10rem;
+    font-family: "titulos";
+}
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed; 
+    bottom: 0%;
+    margin-top: 0%;
+}
+
+#index{
+    background-image: url("imagenes para tpo/Hero2.jpg");
+    size: 975px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    font-size: 3rem;
+    border-style: solid;
+    border-color: brown;
+    height: 800px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#empresas{
+    color: red;
+}
+
+
+@media only screen and (min-width:374px) and (max-width:767px)
 {
     iframe{
         width: 200px;
@@ -163,6 +226,98 @@ h2{
         height: 40px;
         margin-top: 5px;
     }
+    #index{
+        background-image: url("imagenes para tpo/Hero2.jpg");
+        size: 345px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        font-size: 1rem;
+        border-style: solid;
+        border-color: brown;
+        height: 500px;
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+    }
+    #index > p{
+        font-size: 1rem;
+    }
+    #index > div{
+        justify-content: flex-start;
+    }
+    #animacion{
+        height: 5vh;
+    }
+    #animacion > h3{
+        font-size: 3rem;
+    }
+    .empresas{
+        margin-top: 4vh;
+    }
+    #empresas{
+        font-size: 2rem;
+    }
+    .footer{
+        width: 375px;
+    }
+    .grid-container-juegos{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 65px;
+        font-style: normal red;
+        grid-row-gap: 25px;   
+    }
 }
 
+
+@media only screen and (min-width:768px) and (max-width:1022px) {
+    h6{
+        font-size: 15px;
+    }
+    #animacion{
+        height: 13vh;
+    }
+    #animacion > h3 {
+        font-size: 8rem;
+    }
+    .empresas{
+        margin-top: 55vh;
+    }
+    #index > p{
+        font-size: 16px;
+    }
+    .grid-container-juegos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-style: normal red;
+        grid-row-gap: 25px;   
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1439px){
+    #index > p{
+        font-size: 18px;
+    }
+    #index{
+        font-family:'Courier New', Courier, monospace;
+    }
+    #animacion{
+        height: 15vh;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .grid-container-juegos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-style: normal red;
+        grid-row-gap: 25px;   
+    }
+}
 
