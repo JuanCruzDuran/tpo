@@ -17,3 +17,15 @@ async function obtenerPokemon(){
 }
 
 obtenerPokemon()
+
+function ConfirmEnvio(){
+    var respuesta = confirm("Enviado correctamente! Pronto nos pondremos en contacto.");
+
+    if (respuesta == true){
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
